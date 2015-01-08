@@ -9,6 +9,6 @@ interface GitHub {
 ```
 ```java
 GitHub github = Feign.builder()
-           .contract(new JAXRSModule.JAXRSContract())
-           .target(GitHub.class, "https://api.github.com");
+                     .contract(new JAXRSModule.JAXRSContract())
+                     .target(GitHub.class, "https://api.github.com");           
 ```
