@@ -7,5 +7,7 @@ interface GitHub {
   List<Contributor> contributors(@PathParam("owner") String owner, @PathParam("repo") String repo);
 }
 ...
-GitHub github = Feign.builder().contract(new JAXRSModule.JAXRSContract()).target(GitHub.class, "https://api.github.com");
+GitHub github = Feign.builder()Feign.builder()
+           .contract(new JAXRSModule.JAXRSContract())
+           .target(GitHub.class, "https://api.github.com");
 ```
